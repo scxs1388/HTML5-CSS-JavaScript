@@ -1,72 +1,75 @@
 CSS properties
+ã€HTML5/CSSã€‘
+TEXT:
+å­—ä½“æ ¼å¼ï¼šfont-family: serif sans serif monospace;
+å­—ä½“é¢œè‰²ï¼šcolor: red blue;
+å­—ä½“å¤§å°ï¼šfont-size: 99px;
 
-TEXT:ÎÄ±¾
-font-family: serif sans serif monospace;
-color: red blue;
-font-size: 99px;
-
-<style>ÖĞ¿ÉÒÔ´´½¨Àà ÀàÃûÇ°¼Óperiod
+<style>ä¸­å¯ä»¥åˆ›å»ºç±» ç±»åå‰åŠ period
 .red-text{ }
 .larger-image{ }
 .thin-red-border{ }
-Ò»¸öÔªËØÖĞÌí¼Ó¶à¸öÀà£º
+ä¸€ä¸ªå…ƒç´ ä¸­æ·»åŠ å¤šä¸ªç±»ï¼š
 <h1 class="c1 c2">
 
-IMAGE:Í¼Æ¬
-img(image)Ìí¼ÓÍ¼Æ¬
-src(source)Ô´ÎÄ¼ş
-alt(alter)¹æ¶¨ÔÚÍ¼ÏñÎŞ·¨ÏÔÊ¾Ê±µÄÌæ´úÎÄ±¾
-<img src="Ô´ÎÄ¼şµØÖ·" alt="Ô´ÎÄ¼şµØÖ·">
+IMAGE:å›¾ç‰‡
+img(image)æ·»åŠ å›¾ç‰‡
+src=(source)æºæ–‡ä»¶
+alt(alter)è§„å®šåœ¨å›¾åƒæ— æ³•æ˜¾ç¤ºæ—¶çš„æ›¿ä»£æ–‡æœ¬
+<img src="æºæ–‡ä»¶åœ°å€" alt="æºæ–‡ä»¶åœ°å€">
 
-width: 99px ±íÊ¾¿í¶È
+width: 99px è¡¨ç¤ºå®½åº¦
 
-BORDER:±ß¿ò
-border-color: red; ±ß¿òÑÕÉ«
-border-width: 5px; ±ß¿ò¿í¶È
+BORDER:è¾¹æ¡†
+border-color: red; è¾¹æ¡†é¢œè‰²
+border-width: 5px; è¾¹æ¡†å®½åº¦
 border-style: solid; 
-border-radius: 5px(pixels) or 50%(percentage); ±ß¿ò°ë¾¶
+border-radius: 5px(pixels) or 50%(percentage); è¾¹æ¡†åŠå¾„
 background-color: xxx;
 
 
-href(Hypertext Reference)Ö¸¶¨³¬Á´½ÓÄ¿±êµÄURL
-href="ÍøÒ³URL" »ò#
-target="_blank"ÔÚĞÂ±êÇ©Ò³ÖĞ´ò¿ª
+href(Hypertext Reference)æŒ‡å®šè¶…é“¾æ¥ç›®æ ‡çš„URL
+href="ç½‘é¡µURL" æˆ–#
+target="_blank"åœ¨æ–°æ ‡ç­¾é¡µä¸­æ‰“å¼€
 
-ÓĞĞò/ÎŞĞòÊıÁĞ
-<ul>(unordered lists)
-  <li>xxx</li>
+æœ‰åº/æ— åºæ•°åˆ—
+1.æ— åºæ•°åˆ—(unordered lists)
+<ul>
+  <li>xxxx</li>
 </ul>
+2.æœ‰åºæ•°åˆ—(ordered lists)
 <ol>(orderded lists)
-  <li>xxx</li>
-
-ÊäÈë:
-<input type="text">
+  <li>xxxx</li>
 </ol>
-placeholder(Õ¼Î»·û)
-ÊäÈëÇ°µÄÌáÊ¾
+
+
+è¾“å…¥:
+<input type="text">
+placeholder(å ä½ç¬¦)
+è¾“å…¥å‰çš„æç¤º
 <form action="/url(submit)-x-xx-xxx">
-  <input type="text" placeholder="xxx" (requiredÊäÈë²»ÕıÈ·²»Ë¢ĞÂ)>
+  <input type="text" placeholder="xxx" (requiredè¾“å…¥ä¸æ­£ç¡®ä¸åˆ·æ–°)>
 
 <label>
-required ÊäÈë²»ÕıÈ·²»Ë¢ĞÂ
-radio buttons µ¥Ñ¡ type="radio" name="xxx" 
-              ¶àÑ¡ type="checkbox" name="xxx"
+required è¾“å…¥ä¸æ­£ç¡®ä¸åˆ·æ–°
+radio buttons å•é€‰ type="radio" name="xxx" 
+              å¤šé€‰ type="checkbox" name="xxx"
 
 
   <button type="submit">this button submits the form</button>
-checked Ä¬ÈÏÑ¡ÖĞ
+checked é»˜è®¤é€‰ä¸­
 
 id div
-precedenceÓÅÏÈ¼¶£º
+precedenceä¼˜å…ˆçº§ï¼š
 inline style > #id > class > body
 
-¡¾BootStrap¡¿
-class="container-fluid" ×Ô¶¯µ÷ÕûÒ³Ãæ´óĞ¡
-class="img-responsive"  Í¼Æ¬¿í¶ÈÊÊÅäÒ³Ãæ¿í¶È
-class="img-responsive"  ÎÄ×Ö×Ô¶¯¾ÓÖĞ
-class="btn"             button°´Å¥ĞÎÊ½£¨ºÃ¿´£©
-class="btn-block"       button°´Å¥ÉìÕ¹ÌîÂúÒ³ÃæÕû¸öË®Æ½¿Õ¼ä
-class="btn-primary"     ¸Ä±ä°´Å¥ÑÕÉ«£¨ÉîÀ¶É«£©
-class="btn-info"        ¸Ä±ä°´Å¥ÑÕÉ«£¨Ç³À¶É«£©
-class="btn-danger"      ¸Ä±ä°´Å¥ÑÕÉ«£¨ºìÉ«£©
+ã€BootStrapã€‘
+class="container-fluid" è‡ªåŠ¨è°ƒæ•´é¡µé¢å¤§å°
+class="img-responsive"  å›¾ç‰‡å®½åº¦é€‚é…é¡µé¢å®½åº¦
+class="img-responsive"  æ–‡å­—è‡ªåŠ¨å±…ä¸­
+class="btn"             buttonæŒ‰é’®å½¢å¼ï¼ˆå¥½çœ‹ï¼‰
+class="btn-block"       buttonæŒ‰é’®ä¼¸å±•å¡«æ»¡é¡µé¢æ•´ä¸ªæ°´å¹³ç©ºé—´
+class="btn-primary"     æ”¹å˜æŒ‰é’®é¢œè‰²ï¼ˆæ·±è“è‰²ï¼‰
+class="btn-info"        æ”¹å˜æŒ‰é’®é¢œè‰²ï¼ˆæµ…è“è‰²ï¼‰
+class="btn-danger"      æ”¹å˜æŒ‰é’®é¢œè‰²ï¼ˆçº¢è‰²ï¼‰
 
