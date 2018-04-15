@@ -1,0 +1,72 @@
+CSS properties
+
+TEXT:文本
+font-family: serif sans serif monospace;
+color: red blue;
+font-size: 99px;
+
+<style>中可以创建类 类名前加period
+.red-text{ }
+.larger-image{ }
+.thin-red-border{ }
+一个元素中添加多个类：
+<h1 class="c1 c2">
+
+IMAGE:图片
+img(image)添加图片
+src(source)源文件
+alt(alter)规定在图像无法显示时的替代文本
+<img src="源文件地址" alt="源文件地址">
+
+width: 99px 表示宽度
+
+BORDER:边框
+border-color: red; 边框颜色
+border-width: 5px; 边框宽度
+border-style: solid; 
+border-radius: 5px(pixels) or 50%(percentage); 边框半径
+background-color: xxx;
+
+
+href(Hypertext Reference)指定超链接目标的URL
+href="网页URL" 或#
+target="_blank"在新标签页中打开
+
+有序/无序数列
+<ul>(unordered lists)
+  <li>xxx</li>
+</ul>
+<ol>(orderded lists)
+  <li>xxx</li>
+
+输入:
+<input type="text">
+</ol>
+placeholder(占位符)
+输入前的提示
+<form action="/url(submit)-x-xx-xxx">
+  <input type="text" placeholder="xxx" (required输入不正确不刷新)>
+
+<label>
+required 输入不正确不刷新
+radio buttons 单选 type="radio" name="xxx" 
+              多选 type="checkbox" name="xxx"
+
+
+  <button type="submit">this button submits the form</button>
+checked 默认选中
+
+id div
+precedence优先级：
+inline style > #id > class > body
+
+【BootStrap】
+class="container-fluid" 自动调整页面大小
+class="img-responsive"  图片宽度适配页面宽度
+class="img-responsive"  文字自动居中
+class="btn"             button按钮形式（好看）
+class="btn-block"       button按钮伸展填满页面整个水平空间
+class="btn-primary"     改变按钮颜色（深蓝色）
+class="btn-info"        改变按钮颜色（浅蓝色）
+class="btn-danger"      改变按钮颜色（红色）
+
