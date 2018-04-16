@@ -1,6 +1,5 @@
-CSS properties
 【HTML5/CSS】
-TEXT:
+文本(text)
 字体格式：font-family: serif sans serif monospace;
 字体颜色：color: red blue;
 字体大小：font-size: 99px;
@@ -12,12 +11,10 @@ TEXT:
 一个元素中添加多个类：
 <h1 class="c1 c2">
 
-IMAGE:图片
-img(image)添加图片
+<img>(image)添加图片
 src=(source)源文件
 alt(alter)规定在图像无法显示时的替代文本
 <img src="源文件地址" alt="源文件地址">
-
 width: 99px 表示宽度
 
 BORDER:边框
@@ -27,12 +24,15 @@ border-style: solid;
 border-radius: 5px(pixels) or 50%(percentage); 边框半径
 background-color: xxx;
 
+内边距：padding
+外边距：margin
+边界：border
 
 href(Hypertext Reference)指定超链接目标的URL
-href="网页URL" 或#
+href="网页URL" 或"#"
 target="_blank"在新标签页中打开
 
-有序/无序数列
+有序/无序数列(lists)
 1.无序数列(unordered lists)
 <ul>
   <li>xxxx</li>
@@ -42,10 +42,9 @@ target="_blank"在新标签页中打开
   <li>xxxx</li>
 </ol>
 
-
+<form> 表单
 输入:
-<input type="text">
-placeholder(占位符)
+<input type="text" placeholder="xxx"(占位符) class="form control" required(输入不正确不刷新)>
 输入前的提示
 <form action="/url(submit)-x-xx-xxx">
   <input type="text" placeholder="xxx" (required输入不正确不刷新)>
@@ -63,12 +62,51 @@ id div
 precedence优先级：
 inline style > #id > class > body
 
-【BootStrap】
+【CSS】
+[Bootstrap]响应式设计(Responsive Design)框架
+添加代码将Bootstrap添加到任意一个应用中
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<div class="container-fluid"></div>
+
 class="container-fluid" 自动调整页面大小
 class="img-responsive"  图片宽度适配页面宽度
-class="img-responsive"  文字自动居中
-class="btn"             button按钮形式（好看）
+class="text-center"     文字自动居中
+class="text-primary"    改变文字颜色（深蓝色）
+class="text-info"       改变文字颜色（深蓝色）
+class="text-danger"     改变文字颜色（红色）
+<button>
+class="btn"             button按钮形式（好看），使用以下btn类效果
 class="btn-block"       button按钮伸展填满页面整个水平空间
 class="btn-primary"     改变按钮颜色（深蓝色）
 class="btn-info"        改变按钮颜色（浅蓝色）
 class="btn-danger"      改变按钮颜色（红色）
+class="btn-default"     默认按钮形式
+class="target"         
+
+<div>
+class="row"             元素在一行中排列
+class="col-A-B"         A()={md,xs};B=列宽
+class="well"            为设定的列创造出一种视觉上的深度感（深色边框）
+<span> 使用span元素可以把几个元素放在一起，也可以为一个元素的不同部分指定样式
+
+Font Awesome
+添加代码将Font Awesome图标库添加到任意一个应用中
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+<i class="fa fa-xxx"></i> 使用i元素用来指代图标
+fa-trash fa-thumbs-up fa-info-circle fa-paper-plane
+
+
+
+[Flex]
+
+
+【JavaScript】
+<script>
+$(document).ready(function(){ });在没有document ready function以前，你的代码会在HTML没有渲染完成就执行，这样会产生bug
+</script>
+[jQuery]
+所有的jQuery方法都是由$(bling)开始的，$()称为css元素选择器
+jQuery通过选择器来选择一个元素，然后操作元素做出改变
+$("button").addClass("animated bounce");               给button标签的元素添加bounce上下回弹动画效果
+$(".text-primary").addClass("animated shake");         给包含text-primary类的元素添加shake左右震动效果（类名前加.）
+$("#target6").addClass("animated fadeOut/fadeIn")             给id为target6的元素添加fadeOut/fadeIn淡出/淡入效果
